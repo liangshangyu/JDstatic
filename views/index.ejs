@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="cssnimations">
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/reset.css'/>
+    <link rel='stylesheet' href='/assets/font-awesome/css/font-awesome.css'/>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+
+    <script src="/javascripts/jquery/jquery-1.11.3.js"></script>
+    <script src="/javascripts/utils.js"></script>
+    <script src="/javascripts/animate.js"></script>
+    <script src="/javascripts/widge.js"></script>
+    <script src="/javascripts/laytpl/laytpl.js"></script>
+</head>
+<body>
+<!-- 顶部登录条 -->
+<%- include common/top-login.ejs %>
+
+<!-- 头部搜索区域 -->
+<%- include common/top-search.ejs %>
+
+<!-- 导航banner -->
+<%- include common/banner.ejs %>
+
+<!-- 秒杀 -->
+<%- include common/seckill.ejs %>
+
+<!-- 发现好货 排行榜 -->
+<%- include common/findGoods.ejs %>
+
+<!-- 领券中心 -->
+<div id="coupon" class="m-b">
+    <div class="coupon-inner w">
+        <div class="coupon-hd">
+            <a class="coupon-entry" href="javascript:void 0;">
+                <h3 class="coupon-tit">领券中心</h3>
+                <span class="coupon-gap"></span>
+                <p class="coupon-txt">没抢到？</p>
+                <p class="coupon-txt">可以去看看更多优惠券</p>
+                <span class="coupon-btn">前往领券中心 <i class="coupon-icon"></i></span>
+            </a>
+        </div>
+        <div class="coupon-bd">
+            <ul class="coupon-list clearfix">
+                <li class="coupon-item">
+                    <a href="javascript:void 0;" class="coupon-item-lk">
+                        <div class="coupon-info">
+                            <p class="price"><i>￥</i>1000</p>
+                            <p class="desc"><span>仅可购买格力品牌部分自营商品</span></p>
+                            <p class="limit"><span>消费满8000元可用</span></p>
+                            <p class="more">更多好券</p>
+                        </div>
+                        <img src="/images/goods_items/coupon_item_img1.webp" class="coupon-img">
+                    </a>
+                    <span class="coupon-item-shadow"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- rec_1 -->
+<div id="rec_1" class="rec m-b">
+    <div class="rec-inner w">
+        <ul class="rec-list"></ul>
+    </div>
+</div>
+
+<!-- 享品质 -->
+<div id="life" class="life m-b">
+    <div class="life-tit">
+        <div class="tit-inner w">
+            <h3>享品质</h3>
+        </div>
+    </div>
+    <div class="life-inner w">
+        <ul class="life-list clearfix">
+            <li id="j-live" class="life-item life-live">
+                <div class="inner"></div>
+                <ul class="focusList"></ul>
+                <a class="slide-left" href="javascript:void 0;"></a>
+                <a class="slide-right" href="javascript:void 0;"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- rec_2 -->
+<div id="rec_2" class="rec m-b">
+    <div class="rec-inner w">
+        <ul class="rec-list"></ul>
+    </div>
+</div>
+
+<!-- 爱生活 -->
+<div id="cloth" class="cloth m-b">
+    <div class="tit">
+        <div class="tit-inner w">
+            <h3>爱生活</h3>
+        </div>
+    </div>
+    <div class="cloth-inner w clearfix" id="cloth_view">
+
+    </div>
+</div>
+
+<!-- 家电馆 搞机派 -->
+<div id="pc" class="pc m-b">
+    <div class="phone-inner w clearfix" id="pc_view">手机
+
+    </div>
+</div>
+
+<!-- 楼层导航 -->
+<div id="lift" class="lift">
+    <ul class="lift-list">
+        <li class="lift-item"><a class="lift-btn" href="javascript:;"><span>享品质</span></a></li>
+        <li class="lift-item"><a class="lift-btn" href="javascript:;"><span>服饰美妆</span></a></li>
+        <li class="lift-item"><a class="lift-btn" href="javascript:;"><span>家电手机</span></a></li>
+        <li class="lift-item"><a class="lift-btn" href="javascript:;"><span>电脑数码</span></a></li>
+        <li class="lift-item"><a class="lift-btn" href="javascript:;"><span>3C运动</span></a></li>
+        <li class="lift-item"><a class="lift-btn" href="javascript:;"><span>爱吃</span></a></li>
+        <li class="lift-item"><a class="lift-btn" href="javascript:;"><span>母婴家居</span></a></li>
+        <li class="lift-item"><a class="lift-btn" href="javascript:;"><span>图书汽车</span></a></li>
+        <li class="lift-item"><a class="lift-btn" href="javascript:;"><span>虚拟</span></a></li>
+        <li class="lift-item"><a class="lift-btn" href="javascript:;"><span>还没逛够</span></a></li>
+        <li class="lift-item lift-item-top"><a class="lift-btn" href="javascript:;"><span>顶部</span></a></li>
+    </ul>
+</div>
+</body>
+</html>
+
+<%- include common/mod.ejs %>
+
+<script src="/javascripts/top-login.js"></script>
+<script src="/javascripts/top-search.js"></script>
+<script src="/javascripts/sliderClass.js"></script>
+<script src="/javascripts/seckill.js"></script>
+<script src="/javascripts/findGoods.js"></script>
+<script src="/javascripts/coupon.js"></script>
+<script src="/javascripts/recClass.js"></script>
+<script src="/javascripts/eachFloor.js"></script>
+<script src="/javascripts/lift.js"></script>
+
+
+
